@@ -2,7 +2,7 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 # Browser
-choco install Firefox edge-deflector -y
+choco install Firefox edgedeflector -y
 
 # Social
 choco install Thunderbird discord.install whatsapp telegram.install signal skype teamspeak teamviewer zoom -y
@@ -26,7 +26,7 @@ choco install audacity gimp handbreak clipstudio-paint -y
 choco install nextcloud-client 7zip -y
   
 # Utility
-choco install adobereader vlc pia rufus bitwarden -y
+choco install adobereader vlc pia rufus bitwarden keyboard-layout-creator -y
 
 # Games
 choco install origin steam-client faceit minecraft-launcher epicgameslauncher -y
