@@ -1,0 +1,29 @@
+    let mapleader = " "
+    set number relativenumber
+    " set multiple-cursor
+    set ideajoin
+    set incsearch
+    set scrolloff=5
+    set NERDTree
+    set clipboard=unnamedplus
+
+    " Formatting
+    vmap Q gq
+    nmap Q gqap
+
+    " Closing tabs
+    nmap <leader>q :action CloseContent<cr>
+    nmap <leader>Q :action ReopenClosedTab<cr>
+
+    " Errors
+    nmap <leader>x :action GotoNextError<cr>
+    nmap <leader>X :action GotoPreviousError<cr>
+
+    " Refactorings
+    vmap T :action Refactorings.QuickListPopupAction<cr>
+    nmap <leader>rr :action RenameElement<cr>
+    nmap <leader>rg :action Generate<cr>
+    nmap <leader>rI :action OptimizeImports<cr>
+
+    " Inspection
+    nmap <leader>rc :action InspectCode<cr>
