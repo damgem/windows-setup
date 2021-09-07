@@ -30,3 +30,10 @@ choco install adobereader vlc pia rufus bitwarden keyboard-layout-creator -y
 
 # Games
 choco install origin steam-client faceit minecraft-launcher epicgameslauncher -y
+
+# Create Virtual Dev Drive
+mkdir $HOME/Dev
+subst D: $HOME/Dev # Mount Virtual Dev Drive
+# Mount Virtual Dev Drive On Startup
+New-Item "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\mount_dev.bat"
+Set-Content "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\mount_dev.bat" "subst D: $HOME\Dev"
