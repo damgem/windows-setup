@@ -37,3 +37,12 @@ subst D: $HOME/Dev # Mount Virtual Dev Drive
 # Mount Virtual Dev Drive On Startup
 New-Item "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\mount_dev.bat"
 Set-Content "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\mount_dev.bat" "subst D: $HOME\Dev"
+
+# Disable Shortcuts like '3D Objects' | Restart needed for these changes to take effect
+wget "https://www.techspot.com/files/RegistryShortcutsW1064bit.zip" -outfile ~/Downloads/regshortcuts.zip
+Expand-Archive ~/Downloads/regshortcuts.zip ~/Downloads/regshortcuts
+reg import '~/Downloads/regshortcuts/Disable 3D Objects Folder Win10 64.reg'
+reg import '~/Downloads/regshortcuts/Disable Videos Folder Win10 64.reg'
+reg import '~/Downloads/regshortcuts/Disable Music Folder Win10 64.reg'
+reg import '~/Downloads/regshortcuts/Disable Pictures Folder Win10 64.reg'
+reg import '~/Downloads/regshortcuts/Disable Quick Access Win10 64.reg'
