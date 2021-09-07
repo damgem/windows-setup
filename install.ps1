@@ -14,7 +14,7 @@ choco install spotify sonos-controller -y
 choco install wsl2 wsl-ubuntu-2004 microsoft-windows-terminal -y
 
 # Code Editors
-choco install vscode intellijidea-ultimate notepadplusplus -y
+choco install vscode intellijidea-ultimate notepadplusplus neovim -y
   
 # Coding Utility
 choco install postman octave -y
