@@ -43,8 +43,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 # Code Editors 📝
  * Visual Code [🍫](https://community.chocolatey.org/packages/vscode)
-	* Theme: One Dark Pro 
+	* Theme: Gruvbox
+	* Font: JetBrainsMono [📥](https://www.jetbrains.com/lp/mono/) ([see also](https://dev.to/shofol/how-to-use-jetbrainsmono-in-vscode-jb8))
  * IntelliJ [🍫](https://community.chocolatey.org/packages/intellijidea-ultimate)
+ 	* Theme: Gruvbox 
 	* IdeaVIM
 	* Spot Profiler for Java and Kotlin
 * Notepad++ [🍫](https://community.chocolatey.org/packages/notepadplusplus)
